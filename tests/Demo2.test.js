@@ -48,7 +48,7 @@ describe("Demo2", function () {
         .to.changeEtherBalances([demo, owner], [-amount, amount])
     })
 
-    it("should now allow not owner to withdraw funds", async function() {
+    it("should not allow not owner to withdraw funds", async function() {
         await sendMoney(other_addr)
 
         await expect(
