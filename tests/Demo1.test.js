@@ -1,7 +1,7 @@
 const {expect} = require('chai')
 const {ethers} = require('hardhat')
 
-describe("Demo2", function () {
+describe("Demo1", function () {
     let owner
     let other_addr
     let demo
@@ -9,7 +9,7 @@ describe("Demo2", function () {
     beforeEach(async function() {
         [owner, other_addr] = await ethers.getSigners()
 
-        const DemoContract = await ethers.getContractFactory("Demo4", owner)
+        const DemoContract = await ethers.getContractFactory("Demo1", owner)
         demo = await DemoContract.deploy()
         await demo.deployed()
     })
