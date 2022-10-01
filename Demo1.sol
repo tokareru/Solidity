@@ -70,7 +70,7 @@ contract Demo1 {
 
     Status public currentStatus;
 
-    function pay() public {
+    function paypay() public {
         currentStatus = Status.Paid;
     }
 
